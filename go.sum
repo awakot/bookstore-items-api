@@ -1,0 +1,6 @@
+github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
+github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
+github.com/mercadolibre/golang-restclient v0.0.0-20170701022150-51958130a0a0 h1:EDOjA2IGgjSBlPlnW7CzBUo/o410SMiFh670jP29Kc4=
+github.com/mercadolibre/golang-restclient v0.0.0-20170701022150-51958130a0a0/go.mod h1:Z7qYja4aGk/RWl1yJtN1LXRvC7Hsbq8SEbqWWDrMqMs=
+github.com/waytkheming/sample-oauth-golang v0.0.0-20200111095202-6902d4a24558 h1:7isaAXswV2itz6cSZVyLxHcL86a78JA3qGwZLqWq0R8=
+github.com/waytkheming/sample-oauth-golang v0.0.0-20200111095202-6902d4a24558/go.mod h1:msai6LsMY0hd5obx3dyTJVOBv6icd9BOY8RLRgsTQN8=
