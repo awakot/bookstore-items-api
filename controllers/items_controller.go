@@ -28,6 +28,14 @@ func (c *itemsController) Create(w http.ResponseWriter, r *http.Request) {
 		formatter.RespondJSON(w, err.Code, err)
 		return
 	}
+	authorID := oauth.GetCallerID(r)
+
+	if authorID == 0 {
+		restErr := errors.NewUnauthorizedError()
+		formatter.RespondErr(w, *restErr)
+		return
+	}
+
 	var itemReq items.Item
 	body, err := ioutil.ReadAll(r.Body)
 	if err != nil {
@@ -43,7 +51,7 @@ func (c *itemsController) Create(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	itemReq.Author = oauth.GetCallerID(r)
+	itemReq.Author = authorID
 
 	result, restErr := services.ItemService.Create(itemReq)
 	if err != nil {
